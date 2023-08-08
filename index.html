@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Danh muc san pham</h2>
+    <div id="categories" class="categories">
+        
+    </div>
+
+    <h2>Danh sach san pham</h2>
+    <div class="search" id="search">
+        <input type="text">
+        <button>Search</button>
+    </div>
+    <select id="sort">
+        <option value="mac-dinh">Mặc định</option>
+        <option value="gia-thap-den-cao">Giá thấp đến cao</option>
+        <option value="gia-cao-den-thap">Giá cao đến thấp</option>
+        <option value="giam-gia-nhieu">Giảm giá nhiều</option>
+    </select>
+    <div id="products" class="product__list"></div>
+    <div class="pagination">
+        <span class="pagination__Prev" id="pagination__Prev">Prev</span>
+        <span class="pagination__Number" id="pagination__Number">1</span>
+        <span class="pagination__Next" id="pagination__Next">Next</span>
+    </div>
+
+    <script type="module" src="js/categories.js"></script>
+    <script type="module" src="js/products.js"></script>
+</body>
+</html>
